@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{719F1DEC-1B9D-4604-F877-3EA19B19A8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebXR", "WebXR.csproj", "{5E99757B-89BA-DBC8-011E-B0C705EBE7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{F5434434-6C18-CB87-5985-9FE5322E1EE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{719F1DEC-1B9D-4604-F877-3EA19B19A8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719F1DEC-1B9D-4604-F877-3EA19B19A8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719F1DEC-1B9D-4604-F877-3EA19B19A8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719F1DEC-1B9D-4604-F877-3EA19B19A8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E99757B-89BA-DBC8-011E-B0C705EBE7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E99757B-89BA-DBC8-011E-B0C705EBE7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E99757B-89BA-DBC8-011E-B0C705EBE7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E99757B-89BA-DBC8-011E-B0C705EBE7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5434434-6C18-CB87-5985-9FE5322E1EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5434434-6C18-CB87-5985-9FE5322E1EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5434434-6C18-CB87-5985-9FE5322E1EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5434434-6C18-CB87-5985-9FE5322E1EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
