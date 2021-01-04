@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using UnityEngine;
 
 namespace WebXR
 {
@@ -7,5 +8,9 @@ namespace WebXR
 
 		[DllImport("__Internal")]
 		public static extern void displayXRElementId(string id);
+		[DllImport("__Internal")]
+		public static extern void ClickButtonXRElementEvent(string name);
+
+
 	}
 }

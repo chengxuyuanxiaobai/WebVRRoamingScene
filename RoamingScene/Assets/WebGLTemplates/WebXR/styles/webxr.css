@@ -126,7 +126,7 @@ a:link, a:visited {
 
 [data-unity-loaded='true'] #enterxr[data-enabled='true'] {
   display: block;
-}
+} 
 
 #progress,
 #enterxr:hover,

@@ -14,6 +14,11 @@ mergeInto(LibraryManager.library, {
   displayXRElementId: function (id) {
     document.dispatchEvent(new CustomEvent('Unity', {detail: {type: 'displayElementId', id: Pointer_stringify(id)}}));
   },
+  
+    // Declared in WebXRUI.cs
+  ClickButtonXRElementEvent: function (name) {
+    document.dispatchEvent(new CustomEvent('Unity', {detail: {type: 'ClickEvent', id: Pointer_stringify(name)}}));
+  },
 
   // Declared in WebXRManager.cs
   XRInitSharedArray: function(byteOffset, length) {

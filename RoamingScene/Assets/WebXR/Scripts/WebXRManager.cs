@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR;
 using System.Runtime.InteropServices;
+using UnityEngine.UI;
 
 namespace WebXR
 {
@@ -12,6 +13,9 @@ namespace WebXR
 
     public class WebXRManager : MonoBehaviour
     {
+        [Tooltip("开始VR的按钮")]
+        public Button enterVRButton;
+
         [Tooltip("Name of the key used to alternate between XR and normal mode. Leave blank to disable.")]
         public string toggleXRKeyName;
 
@@ -163,14 +167,15 @@ namespace WebXR
         public void OnXRCapabilities(WebXRDisplayCapabilities capabilities)
         {
 #if UNITY_EDITOR
-            // Nothing to do
+            //Nothing to do
 #elif UNITY_WEBGL
             _capabilities = capabilities;
             if (!capabilities.supportsImmersiveVR)
                 WebXRUI.displayXRElementId("novr");
+            enterVRButton.gameObject.SetActive(capabilities.supportsImmersiveVR);
 #endif
 
-            if (OnXRCapabilitiesUpdate != null)
+                if (OnXRCapabilitiesUpdate != null)
                 OnXRCapabilitiesUpdate(capabilities);
         }
 
@@ -198,12 +203,15 @@ namespace WebXR
         public void OnStartXR()
         {
             Instance.setXrState(WebXRState.ENABLED);
+            //enterVRButton.color = new Color(1, 1, 1, 0.8f);
         }
 
         // receive end VR from WebVR browser
         public void OnEndXR()
         {
+            enterVRButton.enabled = true;
             Instance.setXrState(WebXRState.NORMAL);
+            //enterVRButton.color = new Color(1, 1, 1, 1f);
         }
 
         float[] GetFromSharedArray(int index)
